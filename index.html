@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORC-Tech 2026 | Orçamento Escolar Inteligente</title>
+    <!-- Google Fonts: Orbitron (futurista) e Inter (limpa/corporativa) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones futuristas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link para o CSS customizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Linhas de fundo ambientais de alta tecnologia -->
+    <div class="grid-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- CABEÇALHO (Header) -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#hero" class="logo">
+                <span class="tech-icon"><i class="fa-solid fa-microchip"></i></span>
+                ORC-Tech <span class="neon-year">2026</span>
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#orcamento"><i class="fa-solid fa-chart-pie"></i> Orçamento</a></li>
+                    <li><a href="#prioridades"><i class="fa-solid fa-sliders"></i> Prioridades</a></li>
+                    <li><a href="#pressao"><i class="fa-solid fa-triangle-exclamation"></i> Pressão</a></li>
+                    <li><a href="#estrategias"><i class="fa-solid fa-shuffle"></i> Estratégias</a></li>
+                </ul>
+            </nav>
+            <div class="header-status">
+                <span class="status-indicator online"></span>
+                <span class="status-text">SYSTEM ACTIVE</span>
+            </div>
+            <!-- Menu mobile toggle -->
+            <button class="mobile-toggle" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <!-- SEÇÃO INTRODUTÓRIA (Hero Section) -->
+        <section id="hero" class="hero-section">
+            <div class="section-container hero-grid">
+                <div class="hero-info">
+                    <div class="badge-tech"><i class="fa-solid fa-shield-halved"></i> MATEMÁTICA FINANCEIRA APLICADA</div>
+                    <h1 class="gradient-text">Orçamento Escolar Inteligente</h1>
+                    <p class="hero-subtitle">
+                        Compreender o orçamento como um processo matemático de escolha sob restrição no qual toda decisão altera o equilíbrio geral.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#orcamento" class="btn btn-neon">
+                            <span class="btn-text">INICIAR SIMULAÇÃO</span>
+                            <span class="btn-glow"></span>
+                        </a>
+                        <a href="#prioridades" class="btn btn-outline">
+                            <span class="btn-text">VER CONFLITOS</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="tech-card glass hero-dashboard-card">
+                        <div class="card-tech-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="card-title">STATUS_DO_SISTEMA.sys</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-box">
+                                <span class="stat-label">RESTAURAÇÃO DO SALDO</span>
+                                <span class="stat-val neon-cyan">100.0%</span>
+                                <div class="mini-bar"><div class="mini-progress bg-cyan" style="width: 100%"></div></div>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">CUSTO DE OPORTUNIDADE</span>
+                                <span class="stat-val neon-purple">OTIMIZADO</span>
+                                <div class="mini-bar"><div class="mini-progress bg-purple" style="width: 85%"></div></div>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">RESTRIÇÃO ORÇAMENTÁRIA</span>
+                                <span class="stat-val neon-green">EQUILIBRADA</span>
+                                <div class="mini-bar"><div class="mini-progress bg-green" style="width: 100%"></div></div>
+                            </div>
+                        </div>
+                        <div class="cube-container">
+                            <div class="cube-wireframe"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Rolar para Analisar</span>
+                <i class="fa-solid fa-chevron-down bounce"></i>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 1: CONTINUAÇÃO DO ORÇAMENTO (Tabela Interativa) -->
+        <section id="orcamento" class="section-padding">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">SEÇÃO 01</span>
+                    <h2>Matemática da Restrição</h2>
+                    <p class="section-desc">Ajuste as receitas e despesas nos controles abaixo para ver como o saldo geral responde instantaneamente às equações de restrição.</p>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Painel de Inputs -->
+                    <div class="tech-card glass card-inputs">
+                        <h3><i class="fa-solid fa-sliders text-cyan"></i> Ajustes Orçamentários</h3>
+                        
+                        <div class="input-group-panel">
+                            <h4 class="input-category-title text-green"><i class="fa-solid fa-wallet"></i> Receita Geral (Entradas)</h4>
+                            <div class="control-row">
+                                <div class="control-label">
+                                    <span>Repasse Governamental & Mensalidades</span>
+                                    <span class="control-val" id="val-receita">R$ 100.000</span>
+                                </div>
+                                <input type="range" id="input-receita" min="60000" max="140000" step="5000" value="100000" class="slider-cyan">
+                            </div>
+                        </div>
+
+                        <div class="input-group-panel">
+                            <h4 class="input-category-title text-purple"><i class="fa-solid fa-calculator"></i> Despesas Fixas & Variáveis (Saídas)</h4>
+                            
+                            <!-- Manutenção -->
+                            <div class="control-row">
+                                <div class="control-label">
+                                    <span>Manutenção & Infraestrutura</span>
+                                    <span class="control-val text-error" id="val-manutencao">R$ 30.000</span>
+                                </div>
+                                <input type="range" id="input-manutencao" min="15000" max="50000" step="2000" value="30000" class="slider-purple">
+                            </div>
+
+                            <!-- Eventos -->
+                            <div class="control-row">
+                                <div class="control-label">
+                                    <span>Eventos & Atividades Pedagógicas</span>
+                                    <span class="control-val text-error" id="val-eventos">R$ 20.000</span>
+                                </div>
+                                <input type="range" id="input-eventos" min="10000" max="40000" step="2000" value="20000" class="slider-purple">
+                            </div>
+
+                            <!-- Contas Básicas -->
+                            <div class="control-row">
+                                <div class="control-label">
+                                    <span>Contas Básicas (Água, Luz, Internet)</span>
+                                    <span class="control-val text-error" id="val-contas">R$ 15.000</span>
+                                </div>
+                                <input type="range" id="input-contas" min="10000" max="30000" step="1000" value="15000" class="slider-purple">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Painel de Resultados Matemáticos (Visual e Tabela) -->
+                    <div class="tech-card glass card-results">
+                        <h3><i class="fa-solid fa-chart-simple text-purple"></i> Balanço em Tempo Real</h3>
+                        
+                        <div class="balance-display-box">
+                            <!-- Gráfico de Rosca Dinâmico via SVG -->
+                            <div class="svg-chart-container">
+                                <svg class="progress-ring" width="160" height="160">
+                                    <circle class="progress-ring__background" stroke="rgba(255,255,255,0.05)" stroke-width="12" fill="transparent" r="70" cx="80" cy="80"/>
+                                    <circle class="progress-ring__circle" id="progress-indicator" stroke="#00f0ff" stroke-width="12" fill="transparent" r="70" cx="80" cy="80"/>
+                                </svg>
+                                <div class="chart-inner-text">
+                                    <span id="percent-label">65%</span>
+                                    <span class="small-desc">Comprometido</span>
+                                </div>
+                            </div>
+
+                            <div class="numeric-balances">
+                                <div class="num-box">
+                                    <span class="num-label">RECEITA TOTAL</span>
+                                    <span class="num-val text-success" id="total-receita">R$ 100.000</span>
+                                </div>
+                                <div class="num-box">
+                                    <span class="num-label">DESPESAS TOTAIS</span>
+                                    <span class="num-val text-error" id="total-despesa">R$ 65.000</span>
+                                </div>
+                                <div class="num-box highlighted">
+                                    <span class="num-label">SALDO LÍQUIDO</span>
+                                    <span class="num-val" id="saldo-liquido">R$ 35.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tabela Demonstrativa Clássica Futurista -->
+                        <div class="table-container">
+                            <table class="tech-table">
+                                <thead>
+                                    <tr>
+                                        <th>Categoria</th>
+                                        <th>Tipo</th>
+                                        <th>Valores</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Repasses e Contribuições</td>
+                                        <td><span class="badge badge-in">RECEITA</span></td>
+                                        <td class="text-success text-bold" id="table-receita">R$ 100.000</td>
+                                        <td><span class="text-success"><i class="fa-solid fa-circle-check"></i> Ativo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Manutenção Geral</td>
+                                        <td><span class="badge badge-out">DESPESA</span></td>
+                                        <td class="text-error" id="table-manutencao">R$ 30.000</td>
+                                        <td><span class="text-cyan"><i class="fa-solid fa-gears"></i> Ajustável</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eventos e Cultura</td>
+                                        <td><span class="badge badge-out">DESPESA</span></td>
+                                        <td class="text-error" id="table-eventos">R$ 20.000</td>
+                                        <td><span class="text-cyan"><i class="fa-solid fa-calendar-days"></i> Ajustável</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Contas de Consumo</td>
+                                        <td><span class="badge badge-out">DESPESA</span></td>
+                                        <td class="text-error" id="table-contas">R$ 15.000</td>
+                                        <td><span class="text-cyan"><i class="fa-solid fa-bolt"></i> Ajustável</span></td>
+                                    </tr>
+                                    <tr class="table-extra-row" id="row-imprevisto" style="display: none;">
+                                        <td id="table-imprevisto-nome">Imprevisto Simulado</td>
+                                        <td><span class="badge badge-alert">CRÍTICO</span></td>
+                                        <td class="text-error text-bold" id="table-imprevisto-valor">R$ 0</td>
+                                        <td><span class="text-error"><i class="fa-solid fa-triangle-exclamation"></i> Impacto</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: PRIORIZAÇÃO E CONFLITOS (Cards Interativos) -->
+        <section id="prioridades" class="section-padding section-alt">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">SEÇÃO 02</span>
+                    <h2>Escolhas Conflitantes</h2>
+                    <p class="section-desc">Recursos limitados exigem decisões. Toda inclusão de um benefício exige a exclusão de outro. Decida o que será incluído e analise o custo de oportunidade.</p>
+                </div>
+
+                <div class="conflitos-container">
+                    <!-- Card de Dilema 1 -->
+                    <div class="dilema-card glass" data-dilema="1">
+                        <div class="dilema-header">
+                            <span class="dilema-num">Dilema 01</span>
+                            <h3>Tecnologia vs Acervo Físico</h3>
+                        </div>
+                        <div class="dilema-options">
+                            <!-- Opção A -->
+                            <div class="dilema-option" data-option="A" data-cost="12000">
+                                <div class="option-header">
+                                    <span class="radio-indicator"></span>
+                                    <h4>Laboratório de Robótica</h4>
+                                </div>
+                                <p>Implementação de kit de robótica, impressora 3D e óculos VR para aulas de tecnologia.</p>
+                                <span class="option-cost">Impacto: +R$ 12.000</span>
+                            </div>
+                            <div class="versus-divider">VS</div>
+                            <!-- Opção B -->
+                            <div class="dilema-option" data-option="B" data-cost="8000">
+                                <div class="option-header">
+                                    <span class="radio-indicator"></span>
+                                    <h4>Modernização da Biblioteca</h4>
+                                </div>
+                                <p>Compra de acervo físico atualizado, reformas nas estantes e mesas de estudos individuais.</p>
+                                <span class="option-cost">Impacto: +R$ 8.000</span>
+                            </div>
+                        </div>
+
+                        <!-- Justificativa Matemática e Custo de Oportunidade -->
+                        <div class="dilema-justification">
+                            <div class="justification-badge"><i class="fa-solid fa-circle-info"></i> EQUAÇÃO DE DECISÃO</div>
+                            <p class="justification-text">Selecione uma das opções acima para analisar a justificativa matemática e o custo de oportunidade decorrente desta escolha sob restrição.</p>
+                            <div class="status-tags">
+                                <span class="status-tag status-included"><i class="fa-solid fa-circle-check"></i> INCLUÍDO</span>
+                                <span class="status-tag status-excluded"><i class="fa-solid fa-circle-xmark"></i> EXCLUÍDO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card de Dilema 2 -->
+                    <div class="dilema-card glass" data-dilema="2">
+                        <div class="dilema-header">
+                            <span class="dilema-num">Dilema 02</span>
+                            <h3>Infraestrutura vs Bem-Estar</h3>
+                        </div>
+                        <div class="dilema-options">
+                            <!-- Opção A -->
+                            <div class="dilema-option" data-option="A" data-cost="15000">
+                                <div class="option-header">
+                                    <span class="radio-indicator"></span>
+                                    <h4>Climatização Total</h4>
+                                </div>
+                                <p>Instalação de ares-condicionados modernos em todas as salas de aula de ensino médio.</p>
+                                <span class="option-cost">Impacto: +R$ 15.000</span>
+                            </div>
+                            <div class="versus-divider">VS</div>
+                            <!-- Opção B -->
+                            <div class="dilema-option" data-option="B" data-cost="10000">
+                                <div class="option-header">
+                                    <span class="radio-indicator"></span>
+                                    <h4>Reforma da Quadra Esportiva</h4>
+                                </div>
+                                <p>Pintura, novas tabelas de basquete, traves de futsal e redes de voleibol de alta qualidade.</p>
+                                <span class="option-cost">Impacto: +R$ 10.000</span>
+                            </div>
+                        </div>
+
+                        <!-- Justificativa Matemática e Custo de Oportunidade -->
+                        <div class="dilema-justification">
+                            <div class="justification-badge"><i class="fa-solid fa-circle-info"></i> EQUAÇÃO DE DECISÃO</div>
+                            <p class="justification-text">Selecione uma das opções acima para analisar a justificativa matemática e o custo de oportunidade decorrente desta escolha sob restrição.</p>
+                            <div class="status-tags">
+                                <span class="status-tag status-included"><i class="fa-solid fa-circle-check"></i> INCLUÍDO</span>
+                                <span class="status-tag status-excluded"><i class="fa-solid fa-circle-xmark"></i> EXCLUÍDO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Painel de Resumo das Escolhas -->
+                <div class="tech-card glass summary-selections-card">
+                    <div class="summary-header">
+                        <h4><i class="fa-solid fa-wallet text-cyan"></i> Impacto das Escolhas no Orçamento Geral</h4>
+                        <div class="sum-tech-info">Custo Acumulado: <span id="accumulated-cost-label" class="neon-cyan">R$ 0</span></div>
+                    </div>
+                    <p class="text-small text-dim">
+                        Nota: Ao incluir um item acima, o seu custo correspondente é adicionado às despesas de manutenção ou eventos, afetando diretamente o saldo total calculado na Seção 1.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: CENÁRIO DE PRESSÃO (Simulador de Imprevistos) -->
+        <section id="pressao" class="section-padding">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">SEÇÃO 03</span>
+                    <h2>Cenário de Pressão</h2>
+                    <p class="section-desc">Na vida real, orçamentos sofrem oscilações inesperadas. Teste a resiliência do seu planejamento disparando eventos que forçam cortes e reorganizações.</p>
+                </div>
+
+                <div class="pressure-layout">
+                    <!-- Módulo de Controle da Simulação -->
+                    <div class="tech-card glass simulator-card">
+                        <div class="simulator-status-bar">
+                            <span class="sim-status-title">MONITORAMENTO DE RISCO</span>
+                            <span class="sim-status-indicator" id="sim-status-text">NOMINAL</span>
+                        </div>
+                        
+                        <div class="simulator-display">
+                            <div class="sim-screen">
+                                <div class="scanlines"></div>
+                                <div class="terminal-text" id="terminal-content">
+                                    <span class="term-line">> Sistema Orçamentário inicializado...</span>
+                                    <span class="term-line">> Restrições matemáticas ativas.</span>
+                                    <span class="term-line">> Aguardando simulação de eventos críticos.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="simulator-actions">
+                            <button id="btn-simular" class="btn btn-danger">
+                                <span class="btn-text"><i class="fa-solid fa-radiation"></i> SIMULAR IMPREVISTO</span>
+                                <span class="btn-glow"></span>
+                            </button>
+                            <button id="btn-reorganizar" class="btn btn-outline" disabled>
+                                <span class="btn-text"><i class="fa-solid fa-rotate-left"></i> REORGANIZAR SISTEMA</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Efeitos Visuais de Alerta de Déficit -->
+                    <div class="tech-card glass impact-card" id="alert-impact-panel">
+                        <div class="danger-icon-wrapper">
+                            <i class="fa-solid fa-triangle-exclamation icon-large animate-pulse"></i>
+                        </div>
+                        <h3>Estresse Orçamentário</h3>
+                        <p class="impact-desc text-center">
+                            Quando um imprevisto ocorre, o saldo do orçamento escolar pode cair abaixo de zero.
+                        </p>
+                        <div class="alert-stats-box">
+                            <div class="alert-stat">
+                                <span>Gravidade do Impacto</span>
+                                <span class="stat-high" id="impact-severity">-</span>
+                            </div>
+                            <div class="alert-stat">
+                                <span>Variação de Receita/Despesa</span>
+                                <span class="stat-high text-error" id="impact-variance">-</span>
+                            </div>
+                        </div>
+                        <div class="instruction-box">
+                            <span class="text-cyan"><i class="fa-solid fa-lightbulb"></i> Ação Corretiva</span>
+                            <p class="text-small text-dim">Reduza as despesas manuais nos controles da <strong>Seção 1</strong> ou mude de estratégia na <strong>Seção 4</strong> para equilibrar o saldo geral.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: ESTRATÉGIAS ALTERNATIVAS -->
+        <section id="estrategias" class="section-padding section-alt">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">SEÇÃO 04</span>
+                    <h2>Estratégias de Resolução</h2>
+                    <p class="section-desc">Diante de crises ou restrições severas, existem diferentes caminhos analíticos. Avalie qual destas filosofias de gestão se adapta melhor aos objetivos educacionais.</p>
+                </div>
+
+                <div class="strategies-grid">
+                    <!-- Estratégia A -->
+                    <div class="strategy-card glass card-strategy-a">
+                        <div class="strategy-badge">MODELO A</div>
+                        <h3>Contenção de Custos Tradicional</h3>
+                        <p class="strategy-tagline">Corte Linear e Foco em Sobrevivência Imediata</p>
+                        
+                        <div class="strategy-content">
+                            <p class="strategy-text">
+                                Diante de imprevistos ou queda de receitas, a escola opta por cortes imediatos nas áreas flexíveis: suspende eventos pedagógicos, adia projetos de robótica e reduz a manutenção ao mínimo essencial.
+                            </p>
+                            
+                            <ul class="strategy-list">
+                                <li><span class="text-success"><i class="fa-solid fa-circle-check"></i></span> Equilíbrio matemático rápido do caixa escolar.</li>
+                                <li><span class="text-success"><i class="fa-solid fa-circle-check"></i></span> Não exige novas receitas ou parcerias externas.</li>
+                                <li><span class="text-error"><i class="fa-solid fa-circle-xmark"></i></span> Prejudica a qualidade do aprendizado a longo prazo.</li>
+                                <li><span class="text-error"><i class="fa-solid fa-circle-xmark"></i></span> Risco de obsolescência física da infraestrutura escolar.</li>
+                            </ul>
+
+                            <div class="strategy-metrics">
+                                <div class="metric-row">
+                                    <span>Rapidez de Retorno</span>
+                                    <div class="rating-stars text-cyan">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Qualidade Pedagógica</span>
+                                    <div class="rating-stars text-purple">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Resiliência do Sistema</span>
+                                    <div class="rating-stars text-purple">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategy-action">
+                            <button class="btn btn-outline btn-full btn-apply-strategy" data-strategy="A">
+                                <span class="btn-text">APLICAR CORTES IMEDIATOS</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Estratégia B -->
+                    <div class="strategy-card glass card-strategy-b">
+                        <div class="strategy-badge">MODELO B</div>
+                        <h3>Eficiência & Sustentabilidade</h3>
+                        <p class="strategy-tagline">Investimentos Estruturais para Redução de Custos Recorrentes</p>
+                        
+                        <div class="strategy-content">
+                            <p class="strategy-text">
+                                A escola opta por investir uma fatia inicial do orçamento em eficiência energética (como energia solar fotovoltaica) e captação de patrocínios privados para eventos, zerando despesas de consumo permanentes.
+                            </p>
+                            
+                            <ul class="strategy-list">
+                                <li><span class="text-success"><i class="fa-solid fa-circle-check"></i></span> Redução permanente e significativa das Contas Básicas.</li>
+                                <li><span class="text-success"><i class="fa-solid fa-circle-check"></i></span> Mantém o investimento em atividades de robótica e eventos.</li>
+                                <li><span class="text-error"><i class="fa-solid fa-circle-xmark"></i></span> Requer saldo inicial elevado para investimento.</li>
+                                <li><span class="text-error"><i class="fa-solid fa-circle-xmark"></i></span> Resultados visíveis apenas a médio/longo prazo.</li>
+                            </ul>
+
+                            <div class="strategy-metrics">
+                                <div class="metric-row">
+                                    <span>Rapidez de Retorno</span>
+                                    <div class="rating-stars text-cyan">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Qualidade Pedagógica</span>
+                                    <div class="rating-stars text-purple">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Resiliência do Sistema</span>
+                                    <div class="rating-stars text-purple">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategy-action">
+                            <button class="btn btn-outline btn-full btn-apply-strategy" data-strategy="B">
+                                <span class="btn-text">APLICAR OTIMIZAÇÃO E PARCERIAS</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ (Footer) -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="tech-icon"><i class="fa-solid fa-microchip"></i></span>
+                    ORC-Tech <span class="neon-year">2026</span>
+                </a>
+                <p>Educação Matemática Financeira com foco em escolhas sob restrição orçamentária.</p>
+            </div>
+            
+            <div class="footer-members">
+                <h4><i class="fa-solid fa-users text-purple"></i> Integrantes do Grupo</h4>
+                <ul class="members-list">
+                    <li><i class="fa-solid fa-user-astronaut"></i> Miguel Arcanjo</li>
+                    <li><i class="fa-solid fa-user-astronaut"></i> Ryan Rodrigues</li>
+                    <li><i class="fa-solid fa-user-astronaut"></i> Arthu Coura</li>
+                    <li><i class="fa-solid fa-user-astronaut"></i> Guilherme viera</li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>ORC-Tech &copy; 2026 - Trabalho Avaliativo de Matemática Financeira e Orçamento.</p>
+                <div class="tech-tag">SECURITY ENCRYPTED // HASH 84F9A</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
